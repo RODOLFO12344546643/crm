@@ -1,35 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, firstValueFrom } from 'rxjs';
-
-export interface User {
-  id: number;
-  nombre: string;
-  correo: string;
-  password: string;
-  rol: 'admin' | 'representante' | 'estudiante';
-}
-
-export interface Career {
-  id: number;
-  nombre: string;
-  clave: string;
-  poblacion: string;
-  logo?: string;
-}
-
-export interface Tec {
-  id: number;
-  CCT: number;
-  nombre: string;
-  direccion: string;
-  correo: string;
-  telefono: string | null;
-  representante: string;
-  puestoRepresentante: string;
-  logo?: string;
-  carreras: Career[];
-}
+import {User} from '../models/users.model';
+import {Tec} from '../models/tecs.model';
+import {Career} from '../models/career.model';
 
 export interface DatabaseStructure {
   usuarios: User[];
@@ -54,7 +28,6 @@ export class JsonStorageService {
     this.loadData();
   }
 
-  // ==================== CARGA Y GUARDADO ====================
 
   private async loadData(): Promise<void> {
     try {
@@ -88,8 +61,6 @@ export class JsonStorageService {
     // TODO: Implementar llamada a API backend para guardar permanentemente
     // this.http.post('/api/save', data).subscribe();
   }
-
-  // ==================== USUARIOS ====================
 
   getAllUsers(): User[] {
     return this.dataSubject.value.usuarios;

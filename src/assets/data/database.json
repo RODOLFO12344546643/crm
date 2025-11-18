@@ -8,6 +8,13 @@
       "rol": "admin"
     },
     {
+      "id": 19,
+      "nombre": "Admin TecNM",
+      "correo": "JUAN@tecnm.mx",
+      "password": "13",
+      "rol": "admin"
+    },
+    {
       "id": 2,
       "nombre": "Rodolfo",
       "correo": "rodo@tecnm.mx",
@@ -29,10 +36,10 @@
       "CCT": 16001,
       "nombre": "Instituto Tecnológico Superior de Zamora",
       "direccion": "Carretera Zamora - La Piedad Km. 7",
-      "correo": "direccion@itszamora.edu.mx",
-      "telefono": "3515123456",
-      "representante": "Ing. Juan Pérez",
-      "puestoRepresentante": "Director",
+      "correo": "rober@itszamora.edu.mx",
+      "telefono": "3545153456",
+      "representante": "Ing. Roberto Jimenez",
+      "puestoRepresentante": "Padrino",
       "carreras": [
         {
           "id": 101,
@@ -54,8 +61,8 @@
       "nombre": "Instituto Tecnológico Superior de La Piedad",
       "direccion": "Carretera Zamora - La Piedad Km. 7",
       "correo": "direccion@itslapiedad.edu.mx",
-      "telefono": "3515123456",
-      "representante": "Ing. Juan Pérez",
+      "telefono": "3525123456",
+      "representante": "Ing. Jose Juan Cabeza",
       "puestoRepresentante": "Director",
       "carreras": [
         {
@@ -73,17 +80,50 @@
       ]
     },
     {
-
       "id": 1,
       "CCT": 16001,
       "nombre": "Instituto Tecnológico Superior de Morelia",
       "direccion": "Carretera Zamora - La Piedad Km. 7",
       "correo": "direccion@itszamora.edu.mx",
       "telefono": "3515123456",
-      "representante": "Ing. Juan Pérez",
+      "representante": "Ing. Jose Cruz",
       "puestoRepresentante": "Director",
       "carreras": []
+    },
+    {
+      "id": 5,
+      "CCT": 16005,
+      "nombre": "Instituto Tecnológico de Culiacán",
+      "direccion": "Av. Juan de Dios Bátiz 310, Col. Guadalupe, Culiacán, Sinaloa",
+      "correo": "contacto@itculiacan.edu.mx",
+      "telefono": "6677133800",
+      "representante": "Dr. Manuel Salas González",
+      "puestoRepresentante": "Director",
+      "carreras": [
+        {
+          "id": 301,
+          "nombre": "Ingeniería en Sistemas Computacionales",
+          "clave": "ISC-2010-224",
+          "poblacion": "320"
+        },
+        {
+          "id": 302,
+          "nombre": "Ingeniería Electrónica",
+          "clave": "IEL-2010-228",
+          "poblacion": "210"
+        },
+        {
+          "id": 303,
+          "nombre": "Ingeniería Industrial",
+          "clave": "IND-2010-230",
+          "poblacion": "250"
+        }
+      ]
     }
+
+
+
+
   ],
   "currentUser": null
 }
